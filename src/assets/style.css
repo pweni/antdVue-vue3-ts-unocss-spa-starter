@@ -1,0 +1,43 @@
+:root {
+    --primary-color: #316c72;
+    --dark-bg: #18181c;
+    --font-sans-serif: -apple-system, BlinkMacSystemFont, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Segoe UI', 'PingFang SC', HarmonyOS_Regular,
+        'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, 'Source Han Sans SC', 'Noto Sans CJK SC', 'WenQuanYi Micro Hei', Arial, sans-serif;
+    --font-serif: STZhongsong, STSong, 'Noto Serif CJK', 'Noto Serif SC', PMingLiu, SimSun, 'WenQuanYi Bitmap Song', 'Times New Roman', Times, serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', 'Cascadia Code', 'Segoe UI Mono', 'Source Code Pro', Menlo, Consolas, 'Liberation Mono', monospace;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+html {
+    font-size: 4px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--font-sans-serif);
+}
+
+html,
+body,
+#app {
+    margin: 0;
+    padding: 0;
+    min-width: 400px;
+}
+p {
+    margin: 0;
+}
+#app {
+    display: flex;
+    flex-direction: column;
+}
+
+html.dark {
+    background: var(--dark-bg);
+}
