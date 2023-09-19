@@ -4,9 +4,9 @@ import { createPinia } from 'pinia'
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 import App from './App.vue'
 import router from './router'
-import 'ant-design-vue/dist/antd.css'
-import '/src/assets/style.css'
+// import 'fomantic-ui/dist/semantic.min.css'
 import 'uno.css'
+import '/src/assets/style.css'
 // import 'animate.css'
 const app = createApp(App)
 const pinia = createPinia()
