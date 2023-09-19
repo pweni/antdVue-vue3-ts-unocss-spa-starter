@@ -14,5 +14,4 @@ pinia.use(piniaPluginPersistedstate)
 // app.use(MotionPlugin)
 app.use(pinia)
 app.use(router)
-
 app.mount('#app')

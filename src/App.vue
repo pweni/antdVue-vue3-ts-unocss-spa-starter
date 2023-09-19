@@ -1,24 +1,14 @@
-<script setup></script>
-
 <template>
-    <a-config-provider>
+    <a-config-provider :theme="global.theme">
         <RouterView />
     </a-config-provider>
 </template>
+<script setup lang="ts">
+import { useGlobalStore } from 'stores/global'
+// 通过config-provider 定义主题也就是antd自带的样式，完美覆盖
+// https://next.antdv.com/docs/vue/customize-theme-cn
+const global = useGlobalStore()
+global.smiles = ''
+</script>
 
-<style>
-:root {
-    --scrollbarBG: #cce5ff;
-    --thumbBG: #1890ff;
-}
-::-webkit-scrollbar {
-    width: 8px;
-}
-::-webkit-scrollbar-track {
-    background: var(--scrollbarBG);
-}
-::-webkit-scrollbar-thumb {
-    background-color: #74ebd5;
-    background-image: linear-gradient(159deg, #74ebd5 0%, #9face6 100%);
-}
-</style>
+<style scoped></style>

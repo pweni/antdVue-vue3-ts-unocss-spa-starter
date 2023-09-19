@@ -17,37 +17,7 @@ const router = createRouter({
                     path: '/',
                     name: 'indexPage',
                     component: () => import('src/views/IndexPage.vue'),
-                },
-                {
-                    path: 'result',
-                    name: 'resultPage',
-                    // component: () => import('views/ResultPage.vue'),
-                    component: ResultPage,
-                    redirect: { name: 'ADMET' },
-                    children: [
-                        {
-                            path: 'ADMET',
-                            name: 'ADMET',
-                            // component: () => import('components/results/admet/C-ADMET.vue'),
-                            component: CADMET,
-                        },
-                        {
-                            path: 'ChemFH',
-                            name: 'ChemFH',
-                            component: () => import('src/components/results/chemfh/ChemFH.vue'),
-                        },
-                        {
-                            path: 'Tpdenr',
-                            name: 'Tpdenr',
-                            component: () => import('src/components/results/tpdenr/Tpdenr.vue'),
-                        },
-                        {
-                            path: 'nmr',
-                            name: 'nmr',
-                            component: () => import('src/components/results/nmr/NMR.vue'),
-                        },
-                    ],
-                },
+                }
             ],
         },
     ],
