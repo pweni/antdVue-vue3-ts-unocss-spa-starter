@@ -32,8 +32,10 @@
             "stores/*": ["src/stores/*"],
             "utils/*": ["src/utils/*"],
             "types/*": ["src/types/*"],
-            "jsons/*": ["src/jsons/*"]
-        }
+            "json/*": ["src/json/*"],
+            "config/*": ["src/config/*"]
+        },
+        "types": ["vite/client"]
     },
     // Needed to avoid files copied into 'dist' folder (e.g. a `.d.ts` file inside `src-ssr` folder)
     // to be evaluated by TS when their original files has been updated
